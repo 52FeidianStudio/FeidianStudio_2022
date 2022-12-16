@@ -8,6 +8,7 @@ function App() {
           <img src={feidianLogo} className="logo" alt="logo" />
         </a>
       </div>
+      <div className='copyright'>桂ICP备2022000950号-2</div>
     </div>
   )
 }
