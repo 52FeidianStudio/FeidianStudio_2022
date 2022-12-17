@@ -1,0 +1,14 @@
+.swiper_content{
+    width: 100vw;
+    margin-top: 10px;
+    min-height: 100vh;
+}
+.swiper{
+    /* height: calc(100vh - 80px); */
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}

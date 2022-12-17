@@ -1,14 +1,11 @@
-import feidianLogo from './assets/logo.png'
 import './style/App.css'
+import Header from './component/Header'
+import Swiper from './component/Swiper'
 function App() {
   return (
     <div className="App">
-      <div>
-        <a href="https://ifeidian.cc" target="_blank">
-          <img src={feidianLogo} className="logo" alt="logo" />
-        </a>
-      </div>
-      <div className='copyright'>桂ICP备2022000950号-2</div>
+      <Header></Header>
+      <Swiper></Swiper>
     </div>
   )
 }
