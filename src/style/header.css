@@ -1,7 +1,8 @@
-img{
+img {
     width: 100%;
 }
-.header_content{
+
+.header_content {
     position: relative;
     top: 0;
     left: 0;
@@ -13,22 +14,25 @@ img{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.header_logo{
+
+.header_logo {
     width: 50px;
     padding: 15px 5px 5px 30px;
-    
+
 }
-.header_logo:hover{
+
+.header_logo:hover {
     transform: scale(1.5);
     transition: all 0.5s;
 }
-.header_name{
+
+.header_name {
     line-height: 80px;
     font-size: 23px;
     color: grey;
 }
-.header_btn
-{
+
+.header_btn {
     position: absolute;
     right: 50px;
     top: 22px;
