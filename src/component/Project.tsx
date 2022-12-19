@@ -1,5 +1,4 @@
-import { Row, Col, Tabs } from "antd";
-import { ProjectCard } from "./ProjectCard"
+import { Row, Col } from "antd";
 import projectImg1 from "../assets/home/ios.png";
 import projectImg2 from "../assets/home/java.png";
 import projectImg3 from "../assets/home/fe.png";
@@ -39,6 +38,20 @@ export default function Project() {
         },
     ]
 
+    function ProjectCard({ title, description, imgUrl }: any) {
+        return (
+            <div className="projectcard_container">
+                <div className="project_imgbox">
+                    <img src={imgUrl} />
+                    <div className="project_text">
+                        <h4>{title}</h4>
+                        <span>{description}</span>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
     return (
         <section className="project" id="project">
             <div className="project_container">
@@ -49,11 +62,11 @@ export default function Project() {
                         <div className="project_content">
                             <Row>
                                 {
-                                    projects.map((project, index) => 
-                                            <ProjectCard
-                                                key={index}
-                                                {...project}
-                                            />
+                                    projects.map((project, index) =>
+                                        <ProjectCard
+                                            key={index}
+                                            {...project}
+                                        />
                                     )
                                 }
                             </Row>
