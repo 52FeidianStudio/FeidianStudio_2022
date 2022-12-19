@@ -1,0 +1,80 @@
+.page_container {
+    height: 50vw;
+    width: 84vw;
+    font-family: "Alimama_ShuHeiTi_Bold";
+    text-align: center;
+    position: relative;
+    user-select: none;
+    margin: 10vw auto;
+}
+
+.scrollWidth {
+    width: 84vw;
+    transition: "all 0.4s"
+}
+
+.scrollWidth .item {
+    width: 17vw;
+    height: 20vw;
+    border: 1px solid hsl(78, 56%, 47%);
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    border-radius: 1vw;
+    text-align: center;
+    padding-top: 3vw;
+    margin: 2vw;
+    font-size: 2vw;
+    color: #383838;
+    background-color: #fff;
+    position: relative;
+}
+
+.odd{
+    background-color: #383838;
+}
+
+
+.scrollbox_container{
+    overflow: hidden;
+}
+
+.scrollbox_container_inner{
+    transition: all 0.4s;
+}
+
+.scrollbox_container_card{
+    float: left;
+}
+
+.scrollbox_container_card_row{
+    flex-wrap: nowrap;
+    height: 40vw;
+}
+
+.scrollbox_container_card_col:nth-child(odd) .item{
+    top: 10vw;
+}
+
+
+.notice_scroll {
+    width: 100%;
+    position: relative;
+}
+
+.ant-btn-circle{
+    width: 4vw;
+    height: 4vw;
+}
+
+.leftScrollBtn{
+    position: absolute;
+    left: -1vw;
+    bottom: 45%;
+    z-index: 2;
+}
+
+.rightScrollBtn {
+    position: absolute;
+    right: -1vw;
+    bottom: 45%;
+    z-index: 2;
+}
