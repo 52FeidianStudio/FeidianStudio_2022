@@ -49,14 +49,12 @@ export default function Project() {
                         <div className="project_content">
                             <Row>
                                 {
-                                    projects.map((project, index) => {
-                                        return (
+                                    projects.map((project, index) => 
                                             <ProjectCard
                                                 key={index}
                                                 {...project}
                                             />
-                                        )
-                                    })
+                                    )
                                 }
                             </Row>
                         </div>

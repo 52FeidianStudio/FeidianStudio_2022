@@ -1,12 +1,10 @@
 .swiper_content{
     width: 100vw;
     margin-top: 10px;
-    min-height: 100vh;
 }
 .swiper{
-    /* height: calc(100vh - 80px); */
     height: 500px;
-    width: 90%;
+    width: 88%;
     margin: 0 auto;
     border-radius: 10px;
     overflow: hidden;

@@ -1,15 +1,73 @@
 import '../style/header.css'
 import feidianLogo from '../assets/logo.png'
-import { Button } from 'antd'
+import { Menu } from 'antd'
+import type { MenuProps } from 'antd';
+import { MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { useState } from 'react';
+const items: MenuProps['items'] = [
+  {
+    label: 'Home',
+    key: 'mail',
+    icon: <MailOutlined />,
+  },
+  {
+    label: 'Navigation',
+    key: 'SubMenu',
+    icon: <SettingOutlined />,
+    children: [
+      {
+        type: 'group',
+        label: 'Item 1',
+        children: [
+          {
+            label: 'Option 1',
+            key: 'setting:1',
+          },
+          {
+            label: 'Option 2',
+            key: 'setting:2',
+          },
+        ],
+      },
+      {
+        type: 'group',
+        label: 'Item 2',
+        children: [
+          {
+            label: 'Option 3',
+            key: 'setting:3',
+          },
+          {
+            label: 'Option 4',
+            key: 'setting:4',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: (
+      <a href="http://ifeidian.cc" target="_blank" rel="noopener noreferrer">
+        home
+      </a>
+    ),
+    key: 'feidian',
+  },
+];
 export default function Header() {
+  const [current, setCurrent] = useState('mail');
+  const onClick: MenuProps['onClick'] = (e) => {
+    console.log('click ', e);
+    setCurrent(e.key);
+  };
   return (
     <div className='header_content'>
       <div className='header_logo'>
         <img src={feidianLogo} alt='logo' />
       </div>
       <div className='header_name'>沸点工作室</div>
-      <div className='header_btn'>
-        <Button type="primary">加入我们</Button>
+      <div className='menu_content'>
+      <Menu onClick={onClick} selectedKeys={[current]} mode="horizontal" items={items}/>
       </div>
     </div>
   )
