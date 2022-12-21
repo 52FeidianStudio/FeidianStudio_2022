@@ -51,6 +51,12 @@
 
 .scrollbox_container_card_col:nth-child(odd) .item{
     top: 10vw;
+    background: linear-gradient(90.21deg, #b7cddc -5.91%, rgb(80, 161, 245) 151.58%);
+    color: #fff;
+}
+
+.scrollbox_container_card_col:nth-child(even) .item{
+    background: linear-gradient(90.21deg, #b7cddc -5.91%, rgb(80, 161, 245) 111.58%);
 }
 
 
