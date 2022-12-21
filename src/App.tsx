@@ -4,13 +4,14 @@ import Swiper from './component/Swiper'
 import Project from './component/Project'
 import Footer from './component/PageFooter'
 import Notice from './component/Notice'
-
+import About from './component/About'
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <Swiper></Swiper>
-      <Notice></Notice>
+      <About></About>
+      {/* <Notice></Notice> */}
       <Project></Project>
       <Footer></Footer>
     </div>

@@ -35,9 +35,10 @@
 
 .project_imgbox {
     position: relative;
-    border-radius: 3vw;
+    border-radius: 20px;
     overflow: hidden;
     margin-bottom: 1vw;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
 }
 
 .project_imgbox img{

@@ -4,7 +4,6 @@ import projectImg2 from "../assets/home/java.png";
 import projectImg3 from "../assets/home/fe.png";
 import "../style/project.css"
 export default function Project() {
-
     const projects = [
         {
             title: "Project Title",

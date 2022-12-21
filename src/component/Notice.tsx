@@ -2,8 +2,6 @@ import {  useCallback, useEffect, useState } from "react";
 import { Row, Col, Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "../style/Notice.css"
-
-
 export default function ScrollPage() {
     const notices = [
         {
@@ -46,13 +44,11 @@ export default function ScrollPage() {
 
     const [scroll, setScroll] = useState(0);
     const [maxVal, setMaxVal] = useState(0);
-
     useEffect(() => {
         const tw = 168;
         const sw = 84;
         setMaxVal(sw - tw);
     }, []);
-
     const toLeft = useCallback(() => {
         setScroll((prev) => {
             const next = prev + 42;
@@ -61,7 +57,6 @@ export default function ScrollPage() {
         console.log(scroll);
 
     }, []);
-
     const toRight = useCallback(() => {
         setScroll((prev) => {
             const next = prev - 42;
@@ -83,7 +78,6 @@ export default function ScrollPage() {
                     >
                         <LeftOutlined />
                     </Button>
-
                     <Button
                         shape="circle"
                         className="rightScrollBtn"
@@ -92,7 +86,6 @@ export default function ScrollPage() {
                     >
                         <RightOutlined />
                     </Button>
-
                     <div className="scrollbox_container">
                         <div className="scrollbox_container_inner" style={{ transform: `translateX(${scroll}vw)` }}>
                             <div className="scrollbox_container_card">
