@@ -1,5 +1,5 @@
 import "../style/about.css";
-import feidianImg from "../assets/home/fe.png";
+import feidianImg from "../assets/home/1.jpg";
 import { Tag } from "antd";
 export default function About() {
   return (
