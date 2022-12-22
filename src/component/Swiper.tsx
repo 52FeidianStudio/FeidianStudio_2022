@@ -2,15 +2,9 @@ import { Carousel } from "antd";
 import homeBannerFe from "../assets/home/fe.png";
 import homeBannerIos from "../assets/home/ios.png";
 import homeBannerJava from "../assets/home/java.png";
-import "../style/swiper.css";
-/*
-* 照片类型
-*/
-type imgType = {
-    description:string,
-    imgsrc:string
-}
-const swiperImg:imgType[] = [
+import "../style/Swiper.css";
+import type { IMG_TYPE } from "../type/homeType";
+const swiperImg:IMG_TYPE[] = [
   {
     description: "feidianFe",
     imgsrc: homeBannerFe,
@@ -30,7 +24,7 @@ export default function Swiper() {
       <Carousel autoplay>
         {swiperImg.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <h3 className="swiper">
                 <img src={item.imgsrc} alt={item.description} />
               </h3>

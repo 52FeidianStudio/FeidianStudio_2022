@@ -1,47 +1,56 @@
 import {  useCallback, useEffect, useState } from "react";
 import { Row, Col, Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import demosrc from "../assets/home/fe.png"
 import "../style/Notice.css"
+import type { NOTICE_INFO } from "../type/homeType";
+
 export default function ScrollPage() {
-    const notices = [
+    const notices:NOTICE_INFO[] = [
         {
             title: "Project Title1",
             description: "Project Description",
-            data: "2022-12-19"
+            data: "2022-12-19",
+            imgSrc:demosrc
         },
         {
             title: "Project Title2",
             description: "Project Description",
-            data: "2022-12-19"
+            data: "2022-12-19",
+            imgSrc:demosrc
         },
         {
             title: "Project Title3",
             description: "Project Description",
-            data: "2022-12-19"
+            data: "2022-12-19",
+            imgSrc:demosrc
         },
         {
             title: "Project Title4",
             description: "Project Description",
-            data: "2022-12-19"
+            data: "2022-12-19",
+            imgSrc:demosrc
         },
         {
             title: "Project Title5",
             description: "Project Description",
-            data: "2022-12-19"
+            data: "2022-12-19",
+            imgSrc:demosrc
         },
         {
             title: "Project Title6",
             description: "Project Description",
-            data: "2022-12-19"
+            data: "2022-12-19",
+            imgSrc:demosrc
         },
         {
             title: "Project Title7",
             description: "Project Description",
-            data: "2022-12-19"
+            data: "2022-12-19",
+            imgSrc:demosrc
         },
-
+    
     ]
-
     const [scroll, setScroll] = useState(0);
     const [maxVal, setMaxVal] = useState(0);
     useEffect(() => {
@@ -55,7 +64,7 @@ export default function ScrollPage() {
             return next;
         });
         console.log(scroll);
-
+    
     }, []);
     const toRight = useCallback(() => {
         setScroll((prev) => {
@@ -63,10 +72,9 @@ export default function ScrollPage() {
             return next;
         });
     }, [maxVal]);
-
     const isActive = true;
-
     return (
+
         <div className="page_container">
             <div className="scrollWidth">
                 <div className="notice_scroll">
@@ -94,9 +102,10 @@ export default function ScrollPage() {
                                         return (
                                             <Col className="scrollbox_container_card_col" key={index}>
                                                 <div className = {`item`}>
-                                                    <h4 className="noticecard_title">{item.title}</h4>
+                                                    {/* <h4 className="noticecard_title">{item.title}</h4>
                                                     <div className="noticecard_description">{item.description}</div>
-                                                    <div className="noticecard_data">{item.data}</div>
+                                                    <div className="noticecard_data">{item.data}</div> */}
+                                                    <img style={{objectFit:'cover',width:'200px',height:'250px',borderRadius:'10px'}} src={item.imgSrc}/>
                                                 </div>
                                             </Col>
                                         );
@@ -108,7 +117,6 @@ export default function ScrollPage() {
                 </div>
             </div>
         </div>
-
     );
 }
 

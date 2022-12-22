@@ -1,4 +1,4 @@
-import "../style/about.css";
+import "../style/About.css";
 import feidianImg from "../assets/home/1.jpg";
 import { Tag } from "antd";
 export default function About() {
@@ -20,7 +20,8 @@ export default function About() {
           <p>是一个由本科生组成的技术为导向的IT人才孵化工作室</p>
           <p>以技术为导向，关注业内最新的技术栈</p>
           <p>应届毕业生入职于国内多家互联网大厂</p>
-          <p style={{color:'grey',fontSize:'16px'}}>地址：华中农业大学逸夫楼c座地下室</p>
+          <p>Email:feidianstudio@163.com</p>
+          <p style={{fontSize:'12px'}}>地址：湖北省武汉市洪山区狮子山街1号逸夫楼c座地下室</p>
         </div>
       </div>
     </div>

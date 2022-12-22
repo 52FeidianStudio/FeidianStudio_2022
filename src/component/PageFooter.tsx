@@ -1,4 +1,4 @@
-import "../style/footer.css"
+import "../style/Footer.css"
 import { Button } from 'antd';
 import ProgramImg from '../assets/home/footer.gif'
 import feidianLogo from '../assets/logo.png'

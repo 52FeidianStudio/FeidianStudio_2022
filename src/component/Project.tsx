@@ -1,42 +1,43 @@
 import { Row, Col } from "antd";
-import projectImg1 from "../assets/home/ios.png";
-import projectImg2 from "../assets/home/java.png";
-import projectImg3 from "../assets/home/fe.png";
-import "../style/project.css"
+import projectImg1 from "../assets/projects/atlas.png";
+import projectImg2 from "../assets/projects/zizhu.png";
+import projectImg3 from "../assets/projects/shishanyouni.png";
+import emptyImg from "../assets/projects/empty.png"
+import type { PROJECT_INFO } from "../type/homeType";
+import "../style/Project.css"
+const projects:PROJECT_INFO[] = [
+    {
+        title: "狮山图鉴",
+        description: "一款收录了华中农业大学猫猫信息的小程序",
+        imgUrl: projectImg1,
+    },
+    {
+        title: "狮山有你iOS版本",
+        description: "华中农业大学门户iOS客户端",
+        imgUrl: projectImg3,
+    },
+    {
+        title: "华中农业大学学生资助管理中心官网",
+        description: "华中农业大学学生资助管理中心官网重构",
+        imgUrl: projectImg2,
+    },
+    {
+        title: "暂无",
+        description: "nothing",
+        imgUrl: emptyImg,
+    },
+    {
+        title: "暂无",
+        description: "nothing",
+        imgUrl: emptyImg,
+    },
+    {
+        title: "暂无",
+        description: "nothing",
+        imgUrl: emptyImg,
+    },
+]
 export default function Project() {
-    const projects = [
-        {
-            title: "Project Title",
-            description: "Project Description",
-            imgUrl: projectImg1,
-        },
-        {
-            title: "Project Title",
-            description: "Project Description",
-            imgUrl: projectImg2,
-        },
-        {
-            title: "Project Title",
-            description: "Project Description",
-            imgUrl: projectImg3,
-        },
-        {
-            title: "Project Title",
-            description: "Project Description",
-            imgUrl: projectImg3,
-        },
-        {
-            title: "Project Title",
-            description: "Project Description",
-            imgUrl: projectImg1,
-        },
-        {
-            title: "Project Title",
-            description: "Project Description",
-            imgUrl: projectImg2,
-        },
-    ]
-
     function ProjectCard({ title, description, imgUrl }: any) {
         return (
             <div className="projectcard_container">

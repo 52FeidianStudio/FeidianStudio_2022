@@ -1,11 +1,12 @@
 .page_container {
-    height: 50vw;
+    height: 490px;
     width: 84vw;
     font-family: "Alimama_ShuHeiTi_Bold";
     text-align: center;
     position: relative;
     user-select: none;
-    margin: 10vw auto;
+    margin: 0 auto;
+    margin-top: 2vw;
 }
 
 .scrollWidth {
@@ -50,7 +51,7 @@
 }
 
 .scrollbox_container_card_col:nth-child(odd) .item{
-    top: 10vw;
+    top: 5vw;
 }
 
 

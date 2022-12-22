@@ -1,8 +1,8 @@
-import '../style/header.css'
+import '../style/Header.css'
 import feidianLogo from '../assets/logo.png'
 import { Menu } from 'antd'
 import type { MenuProps } from 'antd';
-import { MailOutlined, SettingOutlined } from '@ant-design/icons';
+import { MailOutlined, SettingOutlined,YuqueOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 const items: MenuProps['items'] = [
   {
@@ -11,7 +11,12 @@ const items: MenuProps['items'] = [
     icon: <MailOutlined />,
   },
   {
-    label: 'Navigation',
+    label: 'contact',
+    key: 'contact',
+    icon: <YuqueOutlined />,
+  },
+  {
+    label: 'Goto',
     key: 'SubMenu',
     icon: <SettingOutlined />,
     children: [
@@ -45,14 +50,14 @@ const items: MenuProps['items'] = [
       },
     ],
   },
-  {
-    label: (
-      <a href="http://ifeidian.cc" target="_blank" rel="noopener noreferrer">
-        home
-      </a>
-    ),
-    key: 'feidian',
-  },
+  // {
+  //   label: (
+  //     <a href="http://ifeidian.cc" target="_blank" rel="noopener noreferrer">
+  //       about
+  //     </a>
+  //   ),
+  //   key: 'feidian',
+  // },
 ];
 export default function Header() {
   const [current, setCurrent] = useState('mail');
