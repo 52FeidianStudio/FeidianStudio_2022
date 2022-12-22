@@ -64,7 +64,6 @@ export default function ScrollPage() {
             return next;
         });
         console.log(scroll);
-    
     }, []);
     const toRight = useCallback(() => {
         setScroll((prev) => {
