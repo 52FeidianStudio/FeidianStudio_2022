@@ -11,7 +11,7 @@ function App() {
       <Header></Header>
       <Swiper></Swiper>
       <About></About>
-      {/*<Notice></Notice> */}
+      <Notice></Notice> 
       <Project></Project>
       <Footer></Footer>
     </div>

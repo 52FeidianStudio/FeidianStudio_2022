@@ -39,16 +39,32 @@ export default function ScrollPage() {
             description: "Project Description",
             data: "2022-12-19"
         },
+        {
+            title: "Project Title8",
+            description: "Project Description",
+            data: "2022-12-19"
+        },
+        {
+            title: "Project Title9",
+            description: "Project Description",
+            data: "2022-12-19"
+        },
+        
 
     ]
 
     const [scroll, setScroll] = useState(0);
     const [maxVal, setMaxVal] = useState(0);
+    let items = document.getElementsByClassName("item");
+
     useEffect(() => {
-        const tw = 168;
+        console.log(items.length);
+        let iLength = items.length*21;
+        const tw = iLength;
         const sw = 84;
         setMaxVal(sw - tw);
     }, []);
+
     const toLeft = useCallback(() => {
         setScroll((prev) => {
             const next = prev + 42;
@@ -57,14 +73,13 @@ export default function ScrollPage() {
         console.log(scroll);
 
     }, []);
+
     const toRight = useCallback(() => {
         setScroll((prev) => {
             const next = prev - 42;
             return next;
         });
     }, [maxVal]);
-
-    const isActive = true;
 
     return (
         <div className="page_container">
@@ -74,7 +89,7 @@ export default function ScrollPage() {
                         shape="circle"
                         className="leftScrollBtn"
                         onClick={toLeft}
-                        style={{ visibility: `${scroll == 0 ? "hidden" : "visible"}` }}
+                        style={{ visibility: `${scroll == 0 ? "hidden" : "visible"}` }}   
                     >
                         <LeftOutlined />
                     </Button>
@@ -93,7 +108,7 @@ export default function ScrollPage() {
                                     {notices.map((item, index) => {
                                         return (
                                             <Col className="scrollbox_container_card_col" key={index}>
-                                                <div className = {`item`}>
+                                                <div className = "item">
                                                     <h4 className="noticecard_title">{item.title}</h4>
                                                     <div className="noticecard_description">{item.description}</div>
                                                     <div className="noticecard_data">{item.data}</div>
