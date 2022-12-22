@@ -1,12 +1,9 @@
 .page_container {
-    height: 490px;
+    height: 40vw;
     width: 84vw;
-    font-family: "Alimama_ShuHeiTi_Bold";
     text-align: center;
     position: relative;
-    user-select: none;
-    margin: 0 auto;
-    margin-top: 2vw;
+    margin: 5vw auto;
 }
 
 .scrollWidth {
@@ -17,21 +14,18 @@
 .scrollWidth .item {
     width: 17vw;
     height: 20vw;
-    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+    box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
     border-radius: 1vw;
-    text-align: center;
     padding-top: 3vw;
     margin: 2vw;
-    font-size: 2vw;
-    color: #383838;
-    background-color: #fff;
     position: relative;
 }
 
-.odd{
-    background-color: #383838;
+.scrollWidth .item:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
+    transform: scale(1.1);
+    transition: all .3s;
 }
-
 
 .scrollbox_container{
     overflow: hidden;
@@ -51,7 +45,38 @@
 }
 
 .scrollbox_container_card_col:nth-child(odd) .item{
-    top: 5vw;
+    top: 10vw;
+    background-color: #356281;
+    background: linear-gradient(90.21deg, #97bfdb -5.91%, #5964b6 111.58%);
+    color: #fff;
+}
+
+.scrollbox_container_card_col:nth-child(even) .item{
+    background-color: #62a2cc;
+    color: #fff;
+}
+
+.noticecard_title{
+    font-size: 1.5vw;
+    float: left;
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+}
+
+.noticecard_description{
+    font-size: 1vw;
+    position: absolute;
+    top: 4vw;
+    left: 1vw;
+    line-height: 1.5;
+}
+
+.noticecard_data{
+    font-size: 1.1vw;
+    position: absolute;
+    top: 19vw;
+    left: 10vw;
 }
 
 
