@@ -4,7 +4,7 @@ import ProgramImg from '../assets/home/footer.gif'
 import feidianLogo from '../assets/logo.png'
 import WechatImg from '../assets/home/wechat.jpg'
 
-export default function PageFooter() {
+const PageFooter:React.FC = function () {
     return (
         <div className="footer_container">
             <div className="footer_content">
@@ -63,3 +63,4 @@ export default function PageFooter() {
         </div>
     )
 }
+export default PageFooter;

@@ -5,7 +5,7 @@ import demosrc from "../assets/home/fe.png"
 import "../style/Notice.css"
 import type { NOTICE_INFO } from "../type/homeType";
 
-export default function ScrollPage() {
+const ScrollPage:React.FC = function () {
     const notices:NOTICE_INFO[] = [
         {
             title: "Project Title1",
@@ -136,4 +136,4 @@ export default function ScrollPage() {
         </div>
     );
 }
-
+export default ScrollPage;

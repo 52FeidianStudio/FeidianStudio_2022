@@ -59,7 +59,7 @@ const items: MenuProps['items'] = [
   //   key: 'feidian',
   // },
 ];
-export default function Header() {
+const Header:React.FC = function () {
   const [current, setCurrent] = useState('mail');
   const onClick: MenuProps['onClick'] = (e) => {
     console.log('click ', e);
@@ -77,3 +77,4 @@ export default function Header() {
     </div>
   )
 }
+export default Header;

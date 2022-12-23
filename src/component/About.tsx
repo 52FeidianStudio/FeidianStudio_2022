@@ -1,7 +1,7 @@
 import "../style/About.css";
 import feidianImg from "../assets/home/1.jpg";
 import { Tag } from "antd";
-export default function About() {
+const About:React.FC = function () {
   return (
     <div className="about_container">
       <div className="about_content">
@@ -27,3 +27,4 @@ export default function About() {
     </div>
   );
 }
+export default About;

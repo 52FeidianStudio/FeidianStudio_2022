@@ -18,7 +18,7 @@ const swiperImg:IMG_TYPE[] = [
     imgsrc: homeBannerJava,
   },
 ];
-export default function Swiper() {
+const Swiper:React.FC = function () {
   return (
     <div className="swiper_content">
       <Carousel autoplay>
@@ -35,3 +35,4 @@ export default function Swiper() {
     </div>
   );
 }
+export default Swiper;

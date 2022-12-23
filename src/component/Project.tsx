@@ -37,7 +37,7 @@ const projects:PROJECT_INFO[] = [
         imgUrl: emptyImg,
     },
 ]
-export default function Project() {
+const Project:React.FC = function () {
     function ProjectCard({ title, description, imgUrl }: any) {
         return (
             <div className="projectcard_container">
@@ -77,3 +77,4 @@ export default function Project() {
         </section>
     )
 }
+export default Project;
