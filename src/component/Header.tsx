@@ -6,12 +6,12 @@ import { MailOutlined, SettingOutlined,YuqueOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 const items: MenuProps['items'] = [
   {
-    label: 'Home',
+    label: '首页',
     key: 'mail',
     icon: <MailOutlined />,
   },
   {
-    label: 'contact',
+    label: '联系我们',
     key: 'contact',
     icon: <YuqueOutlined />,
   },
@@ -25,26 +25,24 @@ const items: MenuProps['items'] = [
         label: 'Item 1',
         children: [
           {
-            label: 'Option 1',
+            label: '最新公告',
             key: 'setting:1',
           },
           {
-            label: 'Option 2',
+            label: '毕业去向',
             key: 'setting:2',
           },
-        ],
-      },
-      {
-        type: 'group',
-        label: 'Item 2',
-        children: [
           {
-            label: 'Option 3',
-            key: 'setting:3',
+            label: '关于我们',
+            key: 'setting:2',
           },
           {
-            label: 'Option 4',
-            key: 'setting:4',
+            label: '加入我们',
+            key: 'setting:2',
+          },
+          {
+            label: '相关信息',
+            key: 'setting:2',
           },
         ],
       },
