@@ -1,3 +1,15 @@
-# 沸点工作室官网
+# FeidianStudio homepage
+## Stacks
+
 React18 + vite + Antd
+
+## How to run？
+
+```shell
+npm install
+//npm i
+npm run dev
+
+npm run build
+```
 

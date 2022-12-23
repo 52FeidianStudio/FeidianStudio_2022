@@ -122,7 +122,7 @@ export default function ScrollPage() {
                                                     <h4 className="noticecard_title">{item.title}</h4>
                                                     <div className="noticecard_description">{item.description}</div>
                                                     <div className="noticecard_data">{item.data}</div> 
-                                                    <img style={{objectFit:'cover',width:'200px',height:'250px',borderRadius:'10px'}} src={item.imgSrc}/>
+                                                    {/* <img style={{objectFit:'cover',width:'200px',height:'250px',borderRadius:'10px'}} src={item.imgSrc}/> */}
                                                 </div>
                                             </Col>
                                         );
