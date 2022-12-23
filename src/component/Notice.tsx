@@ -1,15 +1,15 @@
 import {  useCallback, useEffect, useState } from "react";
 import { Row, Col, Button } from "antd";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-import demosrc from "../assets/home/fe.png"
+import demosrc from "../assets/home/2.jpg"
 import "../style/Notice.css"
 import type { NOTICE_INFO } from "../type/homeType";
 
 export default function ScrollPage() {
     const notices:NOTICE_INFO[] = [
         {
-            title: "Project Title1",
-            description: "Project Description",
+            title: "黄显鑫",
+            description: "腾讯科技有限公司",
             data: "2022-12-19",
             imgSrc:demosrc
         },
@@ -119,10 +119,9 @@ export default function ScrollPage() {
                                         return (
                                             <Col className="scrollbox_container_card_col" key={index}>
                                                 <div className = "item">
+                                                    <img className="noticecard_img" style={{objectFit:'cover',width:'14vw',height:'15vw',borderRadius:'10px'}} src={item.imgSrc}/>
                                                     <h4 className="noticecard_title">{item.title}</h4>
                                                     <div className="noticecard_description">{item.description}</div>
-                                                    <div className="noticecard_data">{item.data}</div> 
-                                                    <img style={{objectFit:'cover',width:'200px',height:'250px',borderRadius:'10px'}} src={item.imgSrc}/>
                                                 </div>
                                             </Col>
                                         );

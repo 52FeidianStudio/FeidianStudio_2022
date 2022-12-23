@@ -1,5 +1,5 @@
 .page_container {
-    height: 40vw;
+    height: 35vw;
     width: 84vw;
     text-align: center;
     position: relative;
@@ -13,18 +13,19 @@
 
 .scrollWidth .item {
     width: 17vw;
-    height: 20vw;
+    height: 19vw;
     box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
     border-radius: 1vw;
     padding-top: 3vw;
     margin: 2vw;
     position: relative;
+    transition: 0.4s ease-in-out;
 }
 
 .scrollWidth .item:hover{
     box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
     transform: scale(1.1);
-    transition: all .3s;
+    transition: 0.4s ease-in-out;
 }
 
 .scrollbox_container{
@@ -56,19 +57,25 @@
     color: #fff;
 }
 
-.noticecard_title{
-    font-size: 1.5vw;
-    float: left;
+.noticecard_img{
     position: absolute;
     top: 1vw;
-    left: 1vw;
+    left: 1.5vw;
+}
+
+.noticecard_title{
+    font-size: 1.2vw;
+    top: 16.5vw;
+    left: 1.5vw;
+    position: absolute;
+    
 }
 
 .noticecard_description{
-    font-size: 1vw;
+    font-size: 1.2vw;
     position: absolute;
-    top: 4vw;
-    left: 1vw;
+    top: 18.5vw;
+    left: 1.5vw;
     line-height: 1.5;
 }
 
