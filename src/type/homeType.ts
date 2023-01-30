@@ -8,8 +8,8 @@ export type PROJECT_INFO = {
     imgUrl: string,
 }
 export type NOTICE_INFO = {
-    title: string,
+    Name: string,
+    GraduationYear:string,
     description: string,
-    data: string,
     imgSrc:string
 }
