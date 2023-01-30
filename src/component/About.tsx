@@ -7,6 +7,9 @@ const About:React.FC = function () {
       <div className="about_content">
         <div className="about_img">
           <img src={feidianImg} alt="feidian" />
+          <img src={feidianImg} alt="feidian" />
+          <img src={feidianImg} alt="feidian" />
+          <img src={feidianImg} alt="feidian" />
         </div>
         <div className="about_title">About Us</div>
         <div className="about_info">
@@ -21,7 +24,7 @@ const About:React.FC = function () {
           <p>以技术为导向，关注业内最新的技术栈</p>
           <p>应届毕业生入职于国内多家互联网大厂</p>
           <p>Email:feidianstudio@163.com</p>
-          <p style={{fontSize:'12px'}}>地址：湖北省武汉市洪山区狮子山街1号逸夫楼c座地下室</p>
+          <p style={{fontSize:'16px'}}>地址：湖北省武汉市洪山区狮子山街1号逸夫楼c座地下室</p>
         </div>
       </div>
     </div>

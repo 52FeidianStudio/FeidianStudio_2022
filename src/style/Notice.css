@@ -1,9 +1,10 @@
 .page_container {
     height: 30vw;
+
     width: 84vw;
     text-align: center;
     position: relative;
-    margin: 5vw auto;
+    margin: 2vw auto;
 }
 
 .scrollWidth {
@@ -75,7 +76,7 @@
 }
 
 .scrollbox_container_card_col:nth-child(odd) .item{
-    top: 10vw;
+    top: 7vw;
     background-color: #356281;
     background: linear-gradient(90.21deg, #97bfdb -5.91%, #5964b6 111.58%);
     color: #fff;
