@@ -1,5 +1,6 @@
 .page_container {
-    height: 35vw;
+    height: 30vw;
+
     width: 84vw;
     text-align: center;
     position: relative;
@@ -13,18 +14,48 @@
 
 .scrollWidth .item {
     width: 17vw;
-    height: 20vw;
+    height: 16vw;
     box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
     border-radius: 1vw;
-    padding-top: 3vw;
+    padding-top: 0vw;
+    padding-bottom: 2vw;
+    text-align: left;
     margin: 2vw;
     position: relative;
+    transition: 0.4s ease-in-out;
+}
+
+.item1 .title_container{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.2vw;
+    font-weight: 350;
+}
+
+.noticecard_img{
+    height: 6vw;
+    opacity: 0.8;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+}
+
+.noticecard_title{
+    padding-top: 1vw;
+    padding-bottom: .5vw;
+}
+
+.noticecard_GY{
+    padding-bottom: .5vw;
+}
+
+.noticecard_description{
+    padding-bottom: .5vw;
 }
 
 .scrollWidth .item:hover{
     box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
     transform: scale(1.1);
-    transition: all .3s;
+    transition: 0.4s ease-in-out;
 }
 
 .scrollbox_container{
@@ -41,7 +72,7 @@
 
 .scrollbox_container_card_row{
     flex-wrap: nowrap;
-    height: 40vw;
+    height: 32vw;
 }
 
 .scrollbox_container_card_col:nth-child(odd) .item{
@@ -56,28 +87,7 @@
     color: #fff;
 }
 
-.noticecard_title{
-    font-size: 1.5vw;
-    float: left;
-    position: absolute;
-    top: 1vw;
-    left: 1vw;
-}
 
-.noticecard_description{
-    font-size: 1vw;
-    position: absolute;
-    top: 4vw;
-    left: 1vw;
-    line-height: 1.5;
-}
-
-.noticecard_data{
-    font-size: 1.1vw;
-    position: absolute;
-    top: 19vw;
-    left: 10vw;
-}
 
 
 .notice_scroll {
@@ -102,4 +112,8 @@
     right: -1vw;
     bottom: 45%;
     z-index: 2;
+}
+
+.scrollbox_container_card_col{
+    display: flex;
 }
