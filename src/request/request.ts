@@ -1,13 +1,14 @@
 import axios from 'axios'
 export default function request(config:any) {
   const instance = axios.create({
-    baseURL: 'http://127.0.0.1:9000',
+    baseURL: 'http://182.254.242.96:3333',
     timeout: 20000,
     headers: {
       'Content-Type': 'application/json;charset=UTF-8',
       'authorization': localStorage.getItem('token')
     },
-    method:'POST'
+    data:config.data,
+    method:config.method
   })
   axios.interceptors.response.use(
     response => {

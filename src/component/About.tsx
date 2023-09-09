@@ -3,7 +3,7 @@ import feidianImg from "../assets/home/1.jpg";
 import { Tag } from "antd";
 const About:React.FC = function () {
   return (
-    <div className="about_container">
+    <div className="about_container" > 
       <div className="about_content">
         <div className="about_img">
           <img src={feidianImg} alt="feidian" />

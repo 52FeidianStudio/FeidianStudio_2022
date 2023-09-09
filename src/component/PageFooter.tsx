@@ -11,7 +11,7 @@ const PageFooter:React.FC = function () {
                 <div className="footer_content_right">
                     <div className="footer_right_line1">沸腾的心，飞扬的梦</div>
                     <div className="footer_right_line2">点滴积累，共码未来!</div>
-                    <a href="#">
+                    <a href="http://192.168.3.76:5173/">
                         <Button type="primary">加入我们！</Button>
                     </a>
                 </div>

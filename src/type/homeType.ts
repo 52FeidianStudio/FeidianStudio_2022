@@ -3,13 +3,29 @@ export type IMG_TYPE = {
     imgsrc:string
 }
 export type PROJECT_INFO = {
-    title: string,
+    title: string, 
     description: string,
     imgUrl: string,
 }
 export type NOTICE_INFO = {
-    Name: string,
-    GraduationYear:string,
-    description: string,
-    imgSrc:string
+        name: string,
+        faculty:string,
+        subject:string,
+        department:string,
+        city:string,
+        company:string,
+    // notices:() => void
+
+}
+export type GROUP_INFO = {
+    departmentName:string,
+    introduction:string
+}
+export type HEADER_INFO = {
+    items:string,
+    label:string,
+    key:string,
+    icon?:React.ReactNode,
+    targetId:string,
+    childern?:GROUP_INFO[]
 }

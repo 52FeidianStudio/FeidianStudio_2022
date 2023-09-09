@@ -14,7 +14,7 @@
 
 .scrollWidth .item {
     width: 17vw;
-    height: 16vw;
+    height: 14vw;
     box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
     border-radius: 1vw;
     padding-top: 0vw;
@@ -26,6 +26,7 @@
 }
 
 .item1 .title_container{
+    margin-top: 39px;
     padding-left: 1vw;
     padding-right: 1vw;
     font-size: 1.2vw;
@@ -44,13 +45,23 @@
     padding-bottom: .5vw;
 }
 
-.noticecard_GY{
+.noticecard_faculy{
     padding-bottom: .5vw;
 }
 
-.noticecard_description{
+.noticecard_sub{
     padding-bottom: .5vw;
 }
+.noticecard_depart{
+    padding-bottom: .5vw;
+}
+.noticecard_city{
+    padding-bottom: .5vw;
+}
+.noticecard_CP{
+    padding-bottom: .5vw;
+}
+
 
 .scrollWidth .item:hover{
     box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;

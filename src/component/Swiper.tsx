@@ -26,7 +26,9 @@ const Swiper:React.FC = function () {
           return (
             <div key={index}>
               <h3 className="swiper">
+                <a href="http://192.168.3.76:5173/">
                 <img src={item.imgsrc} alt={item.description} />
+                </a>
               </h3>
             </div>
           );
