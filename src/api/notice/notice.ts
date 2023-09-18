@@ -1,11 +1,10 @@
 import request from "../../request/request";
 const apis = {
-    Notices(pageNum:any,pageSize:any){
+    Notices(){
         return request({
             url:'/graduate/getMessage',
             method:'GET',
-            pageNum:pageNum,
-            pageSize:pageSize
+            
         })
     }
     

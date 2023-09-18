@@ -1,97 +1,106 @@
-.group-display { 
-    width: 100%;
-    text-align: center; 
-    margin: 2px auto;
-     display: flex;
-    flex-wrap: wrap;  
-  }
- 
- 
-  
-  .group-display-item {
-    display: flex;
-    flex-wrap: nowrap; 
-    width: 42%;
-    height: 250px;
-    position: relative;
-	z-index: 0; 
-	margin: 20px;
-	border-radius: 10px;
-	overflow: hidden;
-	padding: 2rem;
-  
-	
-	&::before {
-		content: '';
-		position: absolute;
-		z-index: -2;
-		left: -50%;
-		top: -50%;
-		width: 200%;
-		height: 200%;
-    box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
-    background-color: #356281;
-    background: linear-gradient(90.21deg, #97bfdb -5.91%, #5964b6 111.58%);
-		/* background-color: #6ab7eaca; */
-        
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		/* background-image: conic-gradient(transparent, rgba(168, 239, 255, 1), transparent 30%);  */
-	}
-	
-	&::after {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		left: 6px;
-		top: 6px;
-		width: calc(100% - 12px);
-		height: calc(100% - 12px); 
-		border-radius: 5px;
-	} 
-  
-  }
-  .Group_title{
-    /* position: relative; */
-    display: inline-block;
-    width: 100%;
-    /* border-bottom: 3px solid rgba(0, 115, 255, 0.776); */
-    margin: 0 auto;
-    font-size: 36px;
-    padding: 10px;
-    height: 34px;
-    /* margin: 2vw 0 5vw 0;  */
-  }
-  .Group_title_bottom{
-    display: inline-block;
-    /* border-bottom: 3px solid rgba(0, 115, 255, 0.776); */
-    margin: 0 auto;
-    font-size: 36px;
-    padding: 5px;
-  }
-  
-  .group-display-des h3 { 
-    font-size: 30px;
-    margin-top: 5px;
-    color: rgba(168, 239, 255, 1);
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .group-display-des p { 
-    color: white; 
-    width: 45%;
-    font-size: 14px;
-    line-height: 4;
-    
+.group-display {
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
 
-    
-  }
-  .group-display-imge{
-    width: 200px;
-    height: 200px; 
-    position: absolute;
-    bottom: 0; 
-    right: 0; 
-  }
+.group_title {
+  position: relative;
+  /* position: relative; */
+  margin: 2vw 0 5vw 0;
+  display: inline-block;
+  width: 100%;
+  /* border-bottom: 3px solid rgba(0, 115, 255, 0.776); */
+  margin: 0 auto;
+  font-size: 40px;
+  padding: 5px;
+  /* margin: 2vw 0 5vw 0;  */
+}
+.group_title p{
+  color: #B8B8B8;
+  font-family: '宋体',sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+}
+
+.group_title_bottom {
+  display: inline-block;
+  border-bottom: 3px solid rgba(0, 115, 255, 0.776);
+  margin: 0 auto;
+  font-size: 36px;
+  padding: 5px;
+}
+
+
+.group-item-container {
+  display: flex;
+  padding: 0 30px 20px 30px;
+  width: 20%;
+  justify-content: center;
+
+}
+
+.group-item {
+  height: 350px;
+  width: 20vw;
+  background: white;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all .3s;
+}
+.group-item:hover{
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  transition: all .3s;
+  transform: scale(1.05);
+}
+.group-name {
+  
+  padding-left: 10px;
+  top: 35px;
+  font-size: 20px;
+  width: calc(100% - 14px);
+
+  color: #000000d9;
+}
+.group-header{
+  width: 100%;
+  
+  /* position: absolute; */
+  display: inline-flex;
+  line-height: 55px;
+  border-left: 4px solid rgba(0, 115, 255, 0.776);
+  text-align: start;
+  background: #f6f6f655;
+}
+.group-imge{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin-top: 10px; 
+  right: 10px;
+}
+.group-description {
+  width: calc(100% - 20px);
+  padding: 10px;
+  position: absolute;
+  top: 120px;
+  color: rgb(83, 83, 83);
+}
+.decoration{
+  width: 100%;
+  background: linear-gradient(90.21deg, #97bfdb -5.91%, #5964b6 111.58%);
+  height: 20%;
+  position: absolute;
+  bottom: 0px;
+}

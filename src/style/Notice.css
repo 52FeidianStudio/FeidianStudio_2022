@@ -1,4 +1,5 @@
 .page_container {
+    
     height: 30vw;
 
     width: 84vw;
@@ -26,7 +27,7 @@
 }
 
 .item1 .title_container{
-    margin-top: 39px;
+    margin-top: 30px;
     padding-left: 1vw;
     padding-right: 1vw;
     font-size: 1.2vw;

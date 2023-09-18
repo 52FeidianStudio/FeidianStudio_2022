@@ -7,7 +7,7 @@ import projectImg5 from "../assets/projects/chart.png"
 import projectImg6 from "../assets/projects/goal.png"
 import emptyImg from "../assets/projects/empty.png";
 import type { PROJECT_INFO } from "../type/homeType";
-import "../style/Project.css";
+import "../style/project.css";
 const projects: PROJECT_INFO[] = [
   {
     title: "狮山图鉴",

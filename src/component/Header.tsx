@@ -105,7 +105,8 @@ const Header: React.FC<ChildProps> = function ({move}) {
   };
 
   return (
-    <div className='header_content'>
+   <div className='top-bar'>
+     <div className='header_content'>
      <div> 
 
 
@@ -127,6 +128,7 @@ const Header: React.FC<ChildProps> = function ({move}) {
         <div>沸点工作室欢迎你的加入！</div>
       </Modal>
     </div>
+   </div>
   )
 }
 export default Header;

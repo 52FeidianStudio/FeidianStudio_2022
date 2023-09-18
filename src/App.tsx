@@ -31,8 +31,8 @@ const App: React.FC = function () {
 
   return (
     <div className="App">
-      <Header move={move} />
-      <Home></Home>
+      <div className='top_bar'><Header  move={move} /></div>
+      <div className='home_content'><Home></Home></div>
       <Footer></Footer>
     </div>
   )

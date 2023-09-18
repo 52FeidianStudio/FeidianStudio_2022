@@ -2,11 +2,25 @@ img {
     width: 100%;
 }
 
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 999;
+    padding-top: 6px;
+    height: 48px;
+    -webkit-box-shadow: 0px 1px 3px 0 #e2e2e2;
+    box-shadow: 0px 1px 3px 0 #e2e2e2;
+}
+
 .header_content {
     position: relative;
     top: 0;
     left: 0;
-    height: 70px;
+    height: 100px;
     width: 100vw;
     background: #fff;
     display: flex;
@@ -20,15 +34,18 @@ img {
     padding: 12px 5px 8px 50px;
 
 }
+
 .header_name {
     line-height: 70px;
     font-size: 19px;
     color: grey;
 }
+
 .menu_content {
     position: absolute;
     right: 50px;
 }
-.ant-menu-horizontal{
+
+.ant-menu-horizontal {
     line-height: 70px;
 }

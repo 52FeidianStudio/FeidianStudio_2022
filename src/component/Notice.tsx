@@ -10,7 +10,7 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import "../style/Notice.css"
 import type { NOTICE_INFO } from "../type/homeType";
 import apis from "../api/notice/notice"
-const ScrollPage: React.FC = function () { 
+const ScrollPage: React.FC = function () {
     const [notices, setNotices] = useState<NOTICE_INFO[]>([]);
     const [scroll, setScroll] = useState(0);
     const [maxVal, setMaxVal] = useState(0);
@@ -23,20 +23,20 @@ const ScrollPage: React.FC = function () {
     //         console.log(data)
     //     })
     // }, [])
-    useEffect(() => { 
+    useEffect(() => {
         console.log(items.length);
         let iLength = items.length * 21;
         const tw = iLength;
         const sw = 84;
         setMaxVal(sw - tw);
     })
-    useEffect(() => { 
-        apis.Notices(1, 3).then(response => {
-            const data = Object.values(response.data.data.list) as NOTICE_INFO[];
+    useEffect(() => {
+        apis.Notices().then(response => {
+            const data = Object.values(response.data.data) as NOTICE_INFO[];
             setNotices(data);
             console.log(data)
         })
-    }, []) 
+    }, [])
     const toLeft = useCallback(() => {
         setScroll((prev) => {
             const next = prev + 42;
@@ -73,22 +73,30 @@ const ScrollPage: React.FC = function () {
                         <RightOutlined />
                     </Button>
                     <div className="scrollbox_container">
+                        <div className="group_title">
+                            <div className="group_title_bottom">Notices</div>
+                        </div>
                         <div className="scrollbox_container_inner" style={{ transform: `translateX(${scroll}vw)` }}>
                             <div className="scrollbox_container_card">
+
                                 <Row className="scrollbox_container_card_row">
+
 
                                     {notices.map((item, index) => {
                                         return (
-                                            <Col className="scrollbox_container_card_col" key={index}>
-                                                <div className="item" >
-                                                    
+                                            <Col className="scrollbox_container_card_col">
+
+
+                                                <div className="item" key={index}>
+
                                                     <div className="item1" >
-                                                        
+
+
                                                         {/* <img className="noticecard_img" src={item.imgSrc} /> */}
                                                         <div className="title_container">
                                                             <div className="noticecard_title" >工作室成员：{item.name}</div>
-                                                            {/* <div className="noticecard_faculy"> 学院：{item.faculty}</div>
-                                                            <div className="noticecard_sub">专业：{item.subject}</div> */}
+                                                            <div className="noticecard_faculy"> 学院：{item.faculty}</div>
+                                                            <div className="noticecard_sub">专业：{item.subject}</div>
                                                             <div className="noticecard_depart">方向：{item.department}</div>
                                                             <div className="noticecard_city" >城市：{item.city}</div>
                                                             <div className="noticecard_CP" >毕业去向：{item.company}</div>

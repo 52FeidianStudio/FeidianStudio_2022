@@ -1,15 +1,19 @@
 import "../style/About.css";
-import feidianImg from "../assets/home/1.jpg";
+// import feidianImg from "../assets/home/1.jpg";
+import feidianImg4 from "../assets/about/psc (1).webp";
+import feidianImg3 from "../assets/about/psc (2).webp"; 
+import feidianImg2 from "../assets/about/psc.png"; 
+import feidianImg1 from "../assets/about/psc.webp";
 import { Tag } from "antd";
 const About:React.FC = function () {
   return (
     <div className="about_container" > 
       <div className="about_content">
         <div className="about_img">
-          <img src={feidianImg} alt="feidian" />
-          <img src={feidianImg} alt="feidian" />
-          <img src={feidianImg} alt="feidian" />
-          <img src={feidianImg} alt="feidian" />
+          <img src={feidianImg1} alt="feidian" />
+          <img src={feidianImg2} alt="feidian" />
+          <img src={feidianImg3} alt="feidian" />
+          <img src={feidianImg4} alt="feidian" />
         </div>
         <div className="about_title">About Us</div>
         <div className="about_info">
@@ -23,8 +27,8 @@ const About:React.FC = function () {
           <p>是一个由本科生组成的技术为导向的IT人才孵化工作室</p>
           <p>以技术为导向，关注业内最新的技术栈</p>
           <p>应届毕业生入职于国内多家互联网大厂</p>
-          <p>Email:feidianstudio@163.com</p>
-          <p style={{fontSize:'16px'}}>地址：湖北省武汉市洪山区狮子山街1号逸夫楼c座地下室</p>
+          <p>Email：feidianstudio@163.com</p>
+          <p style={{fontSize:'16px'}}>地址：湖北省武汉市洪山区狮子山街1号博物馆B109</p>
         </div>
       </div>
     </div>
