@@ -1,6 +1,9 @@
 img {
     width: 100%;
 }
+.ant-modal-content{
+    width: 720px;
+}
 
 .top-bar {
     position: fixed;
@@ -51,7 +54,7 @@ img {
 }
  .imge1{
     display: flex;
-    width: 480px;
-    height: 280px;
+    width: 680px;
+    height: 480px;
  }
  
