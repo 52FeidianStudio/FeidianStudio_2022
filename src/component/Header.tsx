@@ -5,6 +5,7 @@ import type { MenuProps } from 'antd';
 import { MailOutlined, SettingOutlined, YuqueOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import qrCodeImg from '../assets/header/QR_code.png'
+import qrCodeImg2 from '../assets/header/QR_code copy.png'  
 // import PubSub from 'pubsub-js'
 // import Notice from '../component/Notice'
 // import PageFooter from "./PageFooter";
@@ -50,7 +51,7 @@ const items: HEADER_INFO['items'] = [
     children: [
       {
         type: 'group',
-        label: 'Item 1',
+        label: '',
         key:'setting1',
         children: [
           {
@@ -121,9 +122,11 @@ const Header: React.FC<ChildProps> = function ({move}) {
       <Modal
         visible={isModalVisible}
         onCancel={handleCloseModal}
-        footer={null}>
-        <div>
-          <img src={qrCodeImg} alt="" />
+        footer={null}
+        >
+        <div className='qr-imge'>
+          <img src={qrCodeImg} alt="" className='imge1'/>
+          {/* <div className='imge2'><img src={qrCodeImg2} alt="" /></div> */}
         </div>
         <div>沸点工作室欢迎你的加入！</div>
       </Modal>
