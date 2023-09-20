@@ -28,7 +28,7 @@ const GroupDisplay: React.FC = function () {
                     <div className="group-item">
                         <div className="group-header">
                             <div className="group-name">{group.departmentName}</div>
-                            <div className="group-imge"><img src={`/src/assets/groups/imge${index+1}.png`} alt="" /></div>
+                            <div className="group-imge"><img src={`/assets/groups/imge${index+1}.png`} alt="" /></div>
                         </div>
                         
                         <div className="group-description">{group.introduction}</div>

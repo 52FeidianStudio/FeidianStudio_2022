@@ -42,14 +42,13 @@
 
 .group-item-container {
   display: flex;
-  padding: 0 30px 20px 30px;
   width: 20%;
   justify-content: center;
 
 }
 
 .group-item {
-  height: 350px;
+  height: 300px;
   width: 20vw;
   background: white;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
@@ -74,14 +73,19 @@
   color: #000000d9;
 }
 .group-header{
-  width: 100%;
+  width: calc(100% - 10px);
   
-  /* position: absolute; */
+  position: absolute;
   display: inline-flex;
-  line-height: 55px;
-  border-left: 4px solid rgba(0, 115, 255, 0.776);
+  line-height: 70px;
+  border-left: 5px solid rgba(0, 115, 255, 0.776);
+  border-right: 5px solid rgba(0, 115, 255, 0.776);
   text-align: start;
   background: #f6f6f655;
+  top: 0px;
+  left: 0;
+  border-radius: 10px;
+  font-size: 16px;
 }
 .group-imge{
   width: 50px;
@@ -94,7 +98,7 @@
   width: calc(100% - 20px);
   padding: 10px;
   position: absolute;
-  top: 120px;
+  top: 100px;
   color: rgb(83, 83, 83);
 }
 .decoration{
@@ -103,4 +107,5 @@
   height: 20%;
   position: absolute;
   bottom: 0px;
+  border-radius: 10px;
 }

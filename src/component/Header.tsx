@@ -124,8 +124,8 @@ const Header: React.FC<ChildProps> = function ({move}) {
         onCancel={handleCloseModal}
         footer={null}
         >
-        <div className='qr-imge'>
-          <img src={qrCodeImg} alt="" className='imge1'/>
+        <div className='img_qq'>
+          <img src={qrCodeImg} alt="code"/>
           {/* <div className='imge2'><img src={qrCodeImg2} alt="" /></div> */}
         </div>
         <div>沸点工作室欢迎你的加入！</div>
