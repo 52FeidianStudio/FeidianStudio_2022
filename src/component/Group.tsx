@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { GROUP_INFO } from "../type/homeType";
 import apis from "../api/group/group"
-import '../style/group.css'
+import '../style/group.less'
 const GroupDisplay: React.FC = function () {
     const [groups, setGroups] = useState<GROUP_INFO[]>([]);
     let group = document.getElementsByClassName("group")

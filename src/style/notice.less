@@ -1,0 +1,149 @@
+.page_container {
+    
+    height: 30vw;
+
+    width: 84vw;
+    text-align: center;
+    position: relative;
+    margin: 2vw auto;
+}
+
+.scrollWidth {
+    width: 84vw;
+    transition: "all 0.4s"
+}
+
+.scrollWidth .item {
+    width: 17vw;
+    height: 14vw;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
+    border-radius: 1vw;
+    padding-top: 0vw;
+    padding-bottom: 2vw;
+    text-align: left;
+    margin: 2vw;
+    position: relative;
+    transition: 0.4s ease-in-out;
+}
+
+.item1 .title_container{
+    margin-top: 30px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.2vw;
+    font-weight: 350;
+    @media only screen and (max-width:500px){
+        margin-top: 8px;
+    }
+}
+
+.noticecard_img{
+    height: 6vw;
+    opacity: 0.8;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+}
+
+.noticecard_title{
+    padding-top: 1vw;
+    padding-bottom: .5vw;
+    
+}
+
+.noticecard_faculy{
+    padding-bottom: .5vw;
+}
+
+.noticecard_sub{
+    padding-bottom: .5vw;
+}
+.noticecard_depart{
+    padding-bottom: .5vw;
+}
+.noticecard_city{
+    padding-bottom: .5vw;
+}
+.noticecard_CP{
+    padding-bottom: .5vw;
+}
+
+
+.scrollWidth .item:hover{
+    box-shadow: rgba(60, 64, 67, 0.3) 0 2px 3px 0, rgba(60, 64, 67, 0.15) 0 6px 10px 4px;
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+
+.scrollbox_container{
+    overflow: hidden;
+}
+
+.scrollbox_container_inner{
+    transition: all 0.4s;
+}
+
+.scrollbox_container_card{
+    float: left;
+}
+
+.scrollbox_container_card_row{
+    flex-wrap: nowrap;
+    height: 32vw;
+}
+
+.scrollbox_container_card_col:nth-child(odd) .item{
+    top: 7vw;
+    background-color: #356281;
+    background: linear-gradient(90.21deg, #97bfdb -5.91%, #5964b6 111.58%);
+    color: #fff;
+}
+
+.scrollbox_container_card_col:nth-child(even) .item{
+    background-color: #62a2cc;
+    color: #fff;
+}
+
+
+
+
+.notice_scroll {
+    width: 100%;
+    position: relative;
+}
+
+.ant-btn-circle{
+    width: 4vw;
+    height: 4vw;
+    @media only screen and (max-width:500px){
+        // margin-top: 200px;
+        // padding-top: 20px;
+        width: 5vw;
+        height: 7vw;
+    }
+}
+
+.leftScrollBtn{
+    position: absolute;
+    left: -1vw;
+    bottom: 45%;
+    z-index: 2;
+    @media only screen and (max-width:500px){
+        bottom: 28%;
+
+    }
+}
+
+.rightScrollBtn {
+    position: absolute;
+    right: -1vw;
+    bottom: 45%;
+    z-index: 2;
+    @media only screen and (max-width:500px){
+        bottom: 35%;
+    }
+}
+
+.scrollbox_container_card_col{
+    display: flex;
+}
+ 

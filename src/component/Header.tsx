@@ -1,18 +1,11 @@
-import '../style/Header.css'
+import '../style/header.less'
 import feidianLogo from '../assets/logo.png'
 import { Menu, Modal } from 'antd'
 import type { MenuProps } from 'antd';
 import { MailOutlined, SettingOutlined, YuqueOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import qrCodeImg from '../assets/header/QR_code.png'
-import qrCodeImg2 from '../assets/header/QR_code copy.png'  
-// import PubSub from 'pubsub-js'
-// import Notice from '../component/Notice'
-// import PageFooter from "./PageFooter";
-// import Project from "./Project";
-// import SwiperPage from "./Swiper";
-// import About from "./About";
-// import type { HEADER_INFO } from "../type/homeType";
+import qrCodeImg2 from '../assets/header/QR_code copy.png'   
 import MenuItem from 'antd/es/menu/MenuItem';
 interface ChildProps {
   move:(data:string)=>void
@@ -128,7 +121,7 @@ const Header: React.FC<ChildProps> = function ({move}) {
           <img src={qrCodeImg} alt="code"/>
           {/* <div className='imge2'><img src={qrCodeImg2} alt="" /></div> */}
         </div>
-        <div>沸点工作室欢迎你的加入！</div>
+        <div className='welcome'>沸点工作室欢迎你的加入！</div>
       </Modal>
     </div>
    </div>

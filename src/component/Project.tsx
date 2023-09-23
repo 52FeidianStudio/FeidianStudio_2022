@@ -7,7 +7,7 @@ import projectImg5 from "../assets/projects/chart.png"
 import projectImg6 from "../assets/projects/goal.png"
 import emptyImg from "../assets/projects/empty.png";
 import type { PROJECT_INFO } from "../type/homeType";
-import "../style/project.css";
+import "../style/project.less";
 const projects: PROJECT_INFO[] = [
   {
     title: "狮山图鉴",
@@ -60,7 +60,7 @@ const Project: React.FC = function () {
       <div className="project_container">
         <Row>
           <Col>
-            <div style={{marginLeft:'45vw'}} className="title">Projects</div>
+            <div className="title">Projects</div>
             <p>我们的项目</p>
             <div className="project_content">
               <Row>

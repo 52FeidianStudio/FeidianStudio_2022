@@ -1,59 +1,95 @@
 img {
-    width: 100%;
+  width: 100%;
 }
-.ant-modal-content{
-    width: 720px;
+.ant-modal-content {
+  width: 720px;
 }
-
 .top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0 auto;
-    background: #fff;
-    z-index: 999;
-    padding-top: 6px;
-    /* height: 48px; */
-    -webkit-box-shadow: 0px 1px 3px 0 #e2e2e2;
-    box-shadow: 0px 1px 3px 0 #e2e2e2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  z-index: 999;
+  padding-top: 6px;
+  /* height: 48px; */
+  -webkit-box-shadow: 0px 1px 3px 0 #e2e2e2;
+  box-shadow: 0px 1px 3px 0 #e2e2e2;
 }
-
 .header_content {
-    position: relative;
-    top: 0;
-    left: 0;
-    /* height: 100px; */
-    width: 100vw;
-    background: #fff;
-    display: flex;
-    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+  /* height: 100px; */
+  width: 100vw;
+  background: #fff;
+  display: flex;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-
 .header_logo {
-    width: 45px;
-    padding: 12px 5px 8px 50px;
-
+  width: 45px;
+  padding: 12px 5px 8px 50px;
 }
-
+@media only screen and (max-width: 500px) {
+  .header_logo {
+    width: 20px;
+    padding: 26px 5px 8px 20px;
+  }
+}
 .header_name {
+  line-height: 70px;
+  font-size: 19px;
+  color: grey;
+}
+@media only screen and (max-width: 500px) {
+  .header_name {
     line-height: 70px;
-    font-size: 19px;
+    font-size: 15px;
     color: grey;
+  }
 }
-
 .menu_content {
+  position: absolute;
+  right: 50px;
+}
+@media only screen and (max-width: 500px) {
+  .menu_content {
     position: absolute;
-    right: 50px;
+    right: 0px;
+  }
 }
-
 .ant-menu-horizontal {
-    line-height: 70px;
+  line-height: 70px;
 }
- .img_qq{
-    width: 600px;
-    height: 480px;
- }
- 
+@media only screen and (max-width: 500px) {
+  .ant-modal-content {
+    width: 250px;
+    height: 200px;
+  }
+}
+.img_qq {
+  width: 600px;
+  height: 410px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 500px) {
+  .img_qq {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+  }
+}
+.welcome {
+  font-size: 20px;
+  margin-left: 210px;
+}
+@media only screen and (max-width: 500px) {
+  .welcome {
+    font-size: 10px;
+    margin-left: 60px;
+  }
+}
+/*# sourceMappingURL=./header.css.map */

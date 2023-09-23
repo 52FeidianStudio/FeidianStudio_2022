@@ -1,4 +1,4 @@
-import "../style/About.css";
+import "../style/About.less";
 // import feidianImg from "../assets/home/1.jpg";
 import feidianImg4 from "../assets/about/psc (1).webp";
 import feidianImg3 from "../assets/about/psc (2).webp"; 
@@ -28,7 +28,7 @@ const About:React.FC = function () {
           <p>以技术为导向，关注业内最新的技术栈</p>
           <p>应届毕业生入职于国内多家互联网大厂</p>
           <p>Email：feidianstudio@163.com</p>
-          <p style={{fontSize:'16px'}}>地址：湖北省武汉市洪山区狮子山街1号博物馆B109</p>
+          <p >地址：湖北省武汉市洪山区狮子山街1号博物馆B109</p>
         </div>
       </div>
     </div>

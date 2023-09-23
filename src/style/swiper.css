@@ -1,14 +1,25 @@
-.swiper_content{
-    width: 100vw;
-    margin-top: 80px;
-    padding-top: 60px; 
+.swiper_content {
+  width: 100vw;
+  margin-top: 80px;
+  padding-top: 60px;
 }
-.swiper{
-    height: 500px;
-    width: 88%;
-    margin-top: 20px;
-    margin: 0 auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+@media only screen and (max-width: 500px) {
+  .swiper_content {
+    margin-top: 50px;
+  }
 }
+.swiper {
+  height: 500px;
+  width: 88%;
+  margin-top: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 500px) {
+  .swiper {
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=./swiper.css.map */

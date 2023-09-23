@@ -7,7 +7,7 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 // import TogetherDemosrc from "../assets/compony/pinduoduo.jpg"
 // import TencentDemosrc from "../assets/compony/Tencent.jpg"
 // import PostGraduateDemosrc from "../assets/compony/PostGraduate.png"
-import "../style/Notice.css"
+import "../style/notice.less"
 import type { NOTICE_INFO } from "../type/homeType";
 import apis from "../api/notice/notice"
 const ScrollPage: React.FC = function () {
