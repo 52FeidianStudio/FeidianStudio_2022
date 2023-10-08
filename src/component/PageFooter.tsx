@@ -1,17 +1,17 @@
-import "../style/Footer.css"
+import "../style/Footer.less"
 import { Button } from 'antd';
 import ProgramImg from '../assets/home/footer.gif'
 import feidianLogo from '../assets/logo.png'
 import WechatImg from '../assets/home/wechat.jpg'
 
-const PageFooter:React.FC = function () {
+const PageFooter: React.FC = function () {
     return (
         <div className="footer_container">
             <div className="footer_content">
                 <div className="footer_content_right">
                     <div className="footer_right_line1">沸腾的心，飞扬的梦</div>
                     <div className="footer_right_line2">点滴积累，共码未来!</div>
-                    <a href="http://182.254.242.96:3334/">
+                    <a href="http://registration.52feidian.com/">
                         <Button type="primary">加入我们！</Button>
                     </a>
                 </div>
@@ -54,11 +54,35 @@ const PageFooter:React.FC = function () {
                 </div>
                 <div className="footer_inner">
                     <div className="footer_inner_context">
-                        <p>COPYRIGHT © 沸点工作室</p>
-                        <p>地址：华中农业大学</p>
-                        <p>E-mail:feidianstudio@163.com</p>
+                        {/* <p>COPYRIGHT © 沸点工作室</p>
+                        <p>地址：湖北省武汉市洪山区狮子山街1号博物馆B109</p>
+                        <p>E-mail:feidianstudio@163.com</p> */}
+                        <div className="area">地址：湖北省武汉市洪山区狮子山街1号博物馆B109 &nbsp;&nbsp; 邮编：430070 &nbsp;&nbsp; E-mail：feidianstudio@163.com</div>
+                        <div className="copyright">
+                            CopyRight&nbsp;
+                            <span >©</span>
+                            &nbsp;华中农业大学版权所有
+                        </div>
+                        <div className="footer_inner_number">
+                            <a target="_blank" href="https://beian.miit.gov.cn" >冀ICP备2023033402号-1</a>
+                        </div>
                     </div>
+
+                    {/* <section className="container copyrights"> 
+                        <p>地址：湖北省武汉市洪山区狮子山街1号博物馆B109 邮编：430070 E-mail:feidianstudio@163.com</p>
+                        <p>
+                            "copyright&nbsp;"
+                            <span >@</span>
+                            "&nbsp;华中农业大学版权所有"
+                        </p>
+                        <p>
+                            <a target="_blank" href="https://beian.miit.gov.c" >冀ICP备2023033402号-1</a>
+                        </p>
+                        ::after 
+                    </section> */}
+
                 </div>
+
             </footer>
         </div>
     )

@@ -1,12 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import { Row, Col, Button } from "antd";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
-// import alibabaDemosrc from "../assets/compony/alibaba.jpg"
-// import ByteDanceDemosrc from "../assets/compony/ByteDance.jpg"
-// import KingSortDemosrc from "../assets/compony/Kingsoft.jpg"
-// import TogetherDemosrc from "../assets/compony/pinduoduo.jpg"
-// import TencentDemosrc from "../assets/compony/Tencent.jpg"
-// import PostGraduateDemosrc from "../assets/compony/PostGraduate.png"
+import { LeftOutlined, RightOutlined } from "@ant-design/icons"; 
 import "../style/notice.less"
 import type { NOTICE_INFO } from "../type/homeType";
 import apis from "../api/notice/notice"
@@ -38,17 +32,31 @@ const ScrollPage: React.FC = function () {
         })
     }, [])
     const toLeft = useCallback(() => {
-        setScroll((prev) => {
-            const next = prev + 42;
-            return next;
-        });
+        if (window.innerWidth<768){
+            setScroll((prev) => {
+                const left = prev + 28.5;
+                return left;
+            })
+        } else {
+            setScroll((prev) => {
+                const next = prev + 42;
+                return next;
+            });
+        }
     }, []);
 
     const toRight = useCallback(() => {
+       if(window.innerWidth<768){
+        setScroll((prev) => {
+            const right = prev - 28.5;
+            return right;
+        })
+       }else{
         setScroll((prev) => {
             const next = prev - 42;
             return next;
         });
+       }
     }, [maxVal]);
 
     return (

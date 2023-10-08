@@ -5,7 +5,7 @@ import projectImg3 from "../assets/projects/shishanyouni.png";
 import projectImg4 from "../assets/projects/cron.png"
 import projectImg5 from "../assets/projects/chart.png"
 import projectImg6 from "../assets/projects/goal.png"
-import emptyImg from "../assets/projects/empty.png";
+// import emptyImg from "../assets/projects/empty.png";
 import type { PROJECT_INFO } from "../type/homeType";
 import "../style/project.less";
 const projects: PROJECT_INFO[] = [

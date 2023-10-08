@@ -28,7 +28,7 @@ const GroupDisplay: React.FC = function () {
                     <div className="group-item">
                         <div className="group-header">
                             <div className="group-name">{group.departmentName}</div>
-                            <div className="group-imge"><img src={`/assets/groups/imge${index+1}.png`} alt="" /></div>
+                            <div className="group-imge"><img src={`../assets/groups/imge${index+1}.png`} alt="" /></div>
                         </div>
                         
                         <div className="group-description">{group.introduction}</div>
@@ -37,35 +37,7 @@ const GroupDisplay: React.FC = function () {
 
                 </div>
             ))}
-        </div>
-        // <div className="group-description">
-        //     <div className="group-item-container">
-        //         <div className="group-item">
-        //             <div className="group-description">
-        //                 负责网页和应用界面的设计与开发,注重用户体验和界面美观,使用HTML、CSS、JavaScript等技术创造吸引人的前端界面
-        //             </div>
-        //             <div className="group-name">
-        //                 前端
-        //             </div>
-        //             <div className="decoration"></div>
-        //         </div>
-        //         <div className="group-item">
-        //             <div className="group-name">
-        //                 后端
-        //             </div>
-        //         </div>
-        //         <div className="group-item">
-        //             <div className="group-name">
-        //                 ios
-        //             </div>
-        //         </div>
-        //         <div className="group-item">
-        //             <div className="group-name">
-        //                 信息安全
-        //             </div>
-        //         </div>
-        //     </div>
-        // </div>
+        </div> 
     )
 }
 export default GroupDisplay;

@@ -21,6 +21,13 @@
   position: relative;
   transition: 0.4s ease-in-out;
 }
+@media only screen and (max-width: 500px) {
+  .scrollWidth .item {
+    width: 95px;
+    height: 120px;
+    margin-bottom: 120px;
+  }
+}
 .item1 .title_container {
   margin-top: 30px;
   padding-left: 1vw;
@@ -30,7 +37,8 @@
 }
 @media only screen and (max-width: 500px) {
   .item1 .title_container {
-    margin-top: 8px;
+    font-size: 2.2vw;
+    margin-top: 15px;
   }
 }
 .noticecard_img {
@@ -68,6 +76,11 @@
 }
 .scrollbox_container_inner {
   transition: all 0.4s;
+}
+@media only screen and (max-width: 500px) {
+  .scrollbox_container_inner {
+    height: 100vw;
+  }
 }
 .scrollbox_container_card {
   float: left;
@@ -108,7 +121,7 @@
 }
 @media only screen and (max-width: 500px) {
   .leftScrollBtn {
-    bottom: 28%;
+    bottom: 60%;
   }
 }
 .rightScrollBtn {
@@ -119,7 +132,7 @@
 }
 @media only screen and (max-width: 500px) {
   .rightScrollBtn {
-    bottom: 35%;
+    bottom: 60%;
   }
 }
 .scrollbox_container_card_col {

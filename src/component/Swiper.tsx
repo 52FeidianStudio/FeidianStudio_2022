@@ -18,7 +18,8 @@ const swiperImg:IMG_TYPE[] = [
     imgsrc: homeBannerJava,
   },
 ];
-const Swiper:React.FC = function () {
+
+const Swiper:React.FC = function () { 
   return (
     <div className="swiper_content">
       <Carousel autoplay>
@@ -26,7 +27,7 @@ const Swiper:React.FC = function () {
           return (
             <div key={index}>
               <h3 className="swiper">
-                <a href="http://182.254.242.96:3334/">
+                <a href="http://registration.52feidian.com/">
                 <img src={item.imgsrc} alt={item.description} />
                 </a>
               </h3>
