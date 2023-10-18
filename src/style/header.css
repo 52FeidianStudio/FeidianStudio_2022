@@ -54,6 +54,7 @@ img {
 .menu_content {
   position: absolute;
   right: 50px;
+  width: 300px;
 }
 @media only screen and (max-width: 500px) {
   .menu_content {
